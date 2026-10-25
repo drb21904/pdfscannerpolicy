@@ -17,18 +17,19 @@
 <body>
 
 <h1>Privacy Policy for PrivacyFirst PDF Scanner</h1>
-<p class="updated">Last updated: October 8, 2026</p>
+<p class="updated">Last updated: October 25, 2026</p>
 
 <p>PrivacyFirst PDF Scanner ("the app") is a document scanner for Android, developed by <a href="http://drb21904.github.io/privacy-first">Privacy First Technologies</a>. This policy explains what the app does and does not do with your data.</p>
 
 <h2>Summary</h2>
-<p class="summary">Your documents never leave your phone unless you choose to send them. The app has no user accounts, no analytics and no server of its own. Scanning, text reading, Safe share and the PDF tools all work on your device. To keep the app free, it shows a few small, non-personalised banner ads from Google AdMob; the only data that leaves your device for this is what Google's ad service receives in order to show those ads (see "Advertising" below).</p>
+<p class="summary">Your documents never leave your phone unless you choose to send them. The app has no user accounts, no analytics and no server of its own. Scanning, text reading, translation, read aloud, Safe share and the PDF tools all work on your device. (Read aloud can optionally use online voices, but only if you turn that on; see "Read aloud" below.) To keep the app free, it shows a few small, non-personalised banner ads from Google AdMob; the only data that leaves your device for this is what Google's ad service receives in order to show those ads (see "Advertising" below).</p>
 
 <h2>What stays on your phone</h2>
 <ul>
   <li>The pictures you scan, the pages made from them, and the text read from them are stored only in the app's private storage on your device. The app doesn't upload them or back them up to any cloud, and other apps can't see them. The app's data is excluded from Android's cloud backup.</li>
   <li>Text recognition runs entirely on your device, using Google ML Kit through Google Play services and the open-source Tesseract engine. Your pictures aren't sent to any server. Finding a page's edges and making ID-photo backgrounds use Google's on-device ML Kit in the same way.</li>
   <li>Safe share (hiding ID, card and account numbers before you share) works on your device. The numbers it finds are never stored separately or sent anywhere.</li>
+  <li>Translation runs on your device with Google ML Kit, once its language pack is downloaded. The text you translate isn't sent to any server.</li>
   <li>Settings you choose (such as language, look and app lock) are stored on your device only.</li>
 </ul>
 
@@ -40,7 +41,11 @@
 </ul>
 
 <h2>Files the app downloads</h2>
-<p>Some features download free files the first time you use them: extra text-recognition languages (from the open-source Tesseract project on GitHub), and the search-by-meaning model and translation language packs (from Google). Only the file is downloaded. Nothing about you or your documents is sent.</p>
+<p>Some features download free files the first time you use them: extra text-recognition languages (from the open-source Tesseract project on GitHub), and the search-by-meaning model and translation language packs (from Google). Only the file is downloaded. Nothing about you or your documents is sent. Voices for read aloud are downloaded by your phone's own speech service, not by the app.</p>
+
+<h2>Read aloud</h2>
+<p>Read aloud uses your phone's own text-to-speech service (usually Google's Speech Services). By default the app uses only <strong>offline voices</strong>: the text is turned into speech on your phone and isn't sent anywhere.</p>
+<p>If you turn on <strong>Settings &rsaquo; More natural voices (online)</strong>, the app uses the speech service's online voices instead. The text being read aloud is then sent over the internet to the provider of that speech service (for Google, under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>) to produce the audio. The app itself doesn't receive or keep anything back. You can turn this off at any time.</p>
 
 <h2>When documents leave your phone</h2>
 <p>Only when you choose to share, save or print a document, and only to the app, folder or printer you pick, using Android's standard share sheet, file picker or print service. The app does not see or control what another app does with a file afterwards; that is governed by the other app's own privacy policy.</p>
@@ -62,7 +67,7 @@
 <h2>Permissions</h2>
 <p>The app requests the following Android permissions, each used only for its stated purpose:</p>
 <ul>
-  <li><strong>Camera</strong> &mdash; to scan documents, QR codes and ID photos. Pictures stay on your device.</li>
+  <li><strong>Camera</strong> &mdash; to scan documents and take ID photos. Pictures stay on your device.</li>
   <li><strong>Biometric / fingerprint</strong> &mdash; only if you turn on App lock, to unlock the app with your fingerprint or face. The app never receives your biometric data; Android only tells it whether unlocking succeeded.</li>
   <li><strong>Storage (WRITE_EXTERNAL_STORAGE, Android 9 and older only)</strong> &mdash; to save a PDF to Downloads or keep PDF copies in Documents when you ask. Newer Android versions need no storage permission for this.</li>
   <li><strong>Internet and network state</strong> &mdash; to load ads and to download the optional language and search files described above. Your documents are never sent over the network by the app.</li>
